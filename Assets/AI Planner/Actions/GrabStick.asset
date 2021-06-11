@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab48ef9de5712c440bd0e1f505d00e04, type: 3}
+  m_Name: GrabStick
+  m_EditorClassIdentifier: 
+  m_Parameters:
+  - m_Name: Player
+    m_RequiredTraits:
+    - {fileID: 11400000, guid: 6b7c2cd8001b84552891cf17ebf8b587, type: 2}
+    - {fileID: 11400000, guid: 28aaae8fdb652a048ab64cdcb29c53d3, type: 2}
+    m_ProhibitedTraits: []
+    m_LimitCount: 0
+    m_LimitComparerType: 
+    m_LimitComparerReference: 
+  - m_Name: Stick
+    m_RequiredTraits:
+    - {fileID: 11400000, guid: ea2fba3146a10eb4cbf89b414175ce5b, type: 2}
+    - {fileID: 11400000, guid: 6b7c2cd8001b84552891cf17ebf8b587, type: 2}
+    m_ProhibitedTraits: []
+    m_LimitCount: 0
+    m_LimitComparerType: 
+    m_LimitComparerReference: 
+  m_Preconditions:
+  - m_Operator: ==
+    m_CustomOperatorType: 
+    m_OperandA:
+      m_Parameter: Player
+      m_Trait: {fileID: 11400000, guid: 6b7c2cd8001b84552891cf17ebf8b587, type: 2}
+      m_TraitPropertyId: 0
+      m_Enum: {fileID: 0}
+      m_Value: 
+    m_OperandB:
+      m_Parameter: Stick
+      m_Trait: {fileID: 11400000, guid: 6b7c2cd8001b84552891cf17ebf8b587, type: 2}
+      m_TraitPropertyId: 0
+      m_Enum: {fileID: 0}
+      m_Value: 
+  - m_Operator: '>'
+    m_CustomOperatorType: 
+    m_OperandA:
+      m_Parameter: Player
+      m_Trait: {fileID: 11400000, guid: 28aaae8fdb652a048ab64cdcb29c53d3, type: 2}
+      m_TraitPropertyId: 0
+      m_Enum: {fileID: 0}
+      m_Value: 
+    m_OperandB:
+      m_Parameter: 
+      m_Trait: {fileID: 0}
+      m_TraitPropertyId: -1
+      m_Enum: {fileID: 0}
+      m_Value: 4
+  m_CreatedObjects: []
+  m_RemovedObjects: []
+  m_ObjectModifiers:
+  - m_Operator: +=
+    m_CustomOperatorType: 
+    m_OperandA:
+      m_Parameter: Player
+      m_Trait: {fileID: 11400000, guid: 28aaae8fdb652a048ab64cdcb29c53d3, type: 2}
+      m_TraitPropertyId: 0
+      m_Enum: {fileID: 0}
+      m_Value: 
+    m_OperandB:
+      m_Parameter: 
+      m_Trait: {fileID: 0}
+      m_TraitPropertyId: -1
+      m_Enum: {fileID: 0}
+      m_Value: 1
+  m_Reward: 50
+  m_CustomRewards: []

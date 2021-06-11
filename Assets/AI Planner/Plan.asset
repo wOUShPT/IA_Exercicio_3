@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93ef591de1cd6a42b724b9314379ad4, type: 3}
+  m_Name: Plan
+  m_EditorClassIdentifier: 
+  m_ActionDefinitions:
+  - {fileID: 11400000, guid: 024c46189a483ee4bb6551817ff8f63a, type: 2}
+  - {fileID: 11400000, guid: 6b03cd1d8baec83418a1c4c1ce67e630, type: 2}
+  - {fileID: 11400000, guid: c117b097afe165c469b9b695b42090bc, type: 2}
+  - {fileID: 11400000, guid: c59472ac311c864418e8ea64faa6e4d0, type: 2}
+  m_StateTerminationDefinitions: []
+  m_CustomCumulativeRewardEstimator: 
+  m_DefaultEstimateLower: -100
+  m_DefaultEstimateAverage: 0
+  m_DefaultEstimateUpper: 100
+  DiscountFactor: 0.95
