@@ -17,7 +17,7 @@ public class COMPLETE_PlayerController : MonoBehaviour
     public IEnumerator MoveTo(GameObject player, GameObject target)
     {
         agent.SetDestination(target.transform.position);
-        while (agent.pathStatus == NavMeshPathStatus.PathComplete)
+        while (agent.pathStatus != NavMeshPathStatus.PathComplete)
         {
             yield return null;
         }
